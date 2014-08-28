@@ -1,0 +1,103 @@
+1,jason.voliva@us.army.mil,Jason,Voliva,"P.O. Box 670336",Chugiak,AK,99567,9076885362,null,null,192.207.30.59,null,null,"{
+  ""status"" : 404,
+  ""message"" : ""Searched within last 24 hours. No results found for this Id."",
+  ""requestId"" : ""51824f69-c51c-4d65-8315-e750bc0fd24e""
+}"
+2,shawna_chastain@yahoo.com,shawna,chastain,"821 n. hoyt st. #9",anchorage,AK,99508,9079290678,www.myamazingformula.com,209.165.177.105,"2007/05/11 01:48:00",null,null,"{
+  ""status"" : 200,
+  ""requestId"" : ""e3bdb6e9-453c-470b-9db9-68850188d46e"",
+  ""likelihood"" : 0.91,
+  ""photos"" : [ {
+    ""type"" : ""other"",
+    ""typeId"" : ""other"",
+    ""typeName"" : ""Other"",
+    ""url"" : ""https://d2ojpxxtu63wzl.cloudfront.net/static/8f1cd611525f8a0433a81f68b90b4bf2_0c55ba6587af722a9d063a5ce33b72a52b5edf78fa14615446abe6e9d496ceb8"",
+    ""isPrimary"" : true
+  } ],
+  ""contactInfo"" : {
+    ""fullName"" : ""Shawna"",
+    ""givenName"" : ""Shawna""
+  },
+  ""demographics"" : {
+    ""locationDeduced"" : {
+      ""normalizedLocation"" : ""Alaska"",
+      ""deducedLocation"" : ""Alaska, United States"",
+      ""state"" : {
+        ""deduced"" : false,
+        ""name"" : ""Alaska"",
+        ""code"" : ""AK""
+      },
+      ""country"" : {
+        ""deduced"" : true,
+        ""name"" : ""United States"",
+        ""code"" : ""US""
+      },
+      ""continent"" : {
+        ""deduced"" : true,
+        ""name"" : ""North America""
+      },
+      ""likelihood"" : 1.0
+    },
+    ""gender"" : ""Female"",
+    ""locationGeneral"" : ""Alaska""
+  },
+  ""socialProfiles"" : [ {
+    ""type"" : ""yahoo"",
+    ""typeId"" : ""yahoo"",
+    ""typeName"" : ""Yahoo"",
+    ""url"" : ""http://profile.yahoo.com/KUOUF2IPD5Q43QRVNPP2MZBKVU"",
+    ""id"" : ""KUOUF2IPD5Q43QRVNPP2MZBKVU""
+  } ]
+}"
+3,william_iyatunguk@yahoo.com,William,Iyatunguk,"606 e. 6th ave.",Nome,AK,99762,9074433829,www.123freetravel.com,65.74.124.170,"4/24/2008 20:00:28",M,5/27/1956,"{
+  ""status"" : 200,
+  ""requestId"" : ""c0071618-3025-4e97-a341-25cf051534f9"",
+  ""likelihood"" : 0.88,
+  ""photos"" : [ {
+    ""type"" : ""facebook"",
+    ""typeId"" : ""facebook"",
+    ""typeName"" : ""Facebook"",
+    ""url"" : ""https://d2ojpxxtu63wzl.cloudfront.net/static/80f01dbd8b84b398456e567128362bcd_df22924ad14140e0c99985bf8cfaad5142ad5dda2c8b8bb3d2542135db60f6f6"",
+    ""isPrimary"" : true
+  }, {
+    ""type"" : ""other"",
+    ""typeId"" : ""other"",
+    ""typeName"" : ""Other"",
+    ""url"" : ""https://d2ojpxxtu63wzl.cloudfront.net/static/1473773e3dea43aa7311e334b0f8793f_175955aba0802b050ae6dfb60f7461e988535cf916ddf7a334beeeddee141893"",
+    ""isPrimary"" : false
+  } ],
+  ""contactInfo"" : {
+    ""familyName"" : ""Iyatunguk"",
+    ""fullName"" : ""William Iyatunguk"",
+    ""givenName"" : ""William""
+  },
+  ""demographics"" : {
+    ""gender"" : ""Male""
+  },
+  ""socialProfiles"" : [ {
+    ""followers"" : 214,
+    ""following"" : 214,
+    ""type"" : ""facebook"",
+    ""typeId"" : ""facebook"",
+    ""typeName"" : ""Facebook"",
+    ""url"" : ""https://www.facebook.com/wiyatunguk"",
+    ""username"" : ""wiyatunguk"",
+    ""id"" : ""100000353200817""
+  }, {
+    ""type"" : ""yahoo"",
+    ""typeId"" : ""yahoo"",
+    ""typeName"" : ""Yahoo"",
+    ""url"" : ""http://profile.yahoo.com/SKXDZETW77NXUQA2DLDZFGYIP4"",
+    ""id"" : ""SKXDZETW77NXUQA2DLDZFGYIP4""
+  } ]
+}"
+4,nblack@bellsouth.net,Brian,Olson,"741 w 75th ave apt 4",Anchorage,AK,99518,null,http://www.dailypress.com/,209.93.28.45,"2008/11/11 19:45:33",null,null,"{
+  ""status"" : 503,
+  ""message"" : ""Service Unavailable"",
+  ""requestId"" : ""1445507f-0623-4bff-a87e-faa31c90c538""
+}"
+5,lilbuc@sbcglobal.net,Israel,"Blanco jr","1107 annapolis","North pole",AK,99705,9074886299,popliving,206.174.7.152,"9 07 2007 19:45:15",null,null,"{
+  ""status"" : 404,
+  ""message"" : ""Searched within last 24 hours. No results found for this Id."",
+  ""requestId"" : ""f3bc03d5-9b38-450c-9359-e800d1f6626c""
+}"

@@ -1,0 +1,66 @@
+<br/>----------------<br/><pre>stdClass Object
+(
+    [status] => 200
+    [requestId] => af8237a4-c7e3-4c48-a5e5-4daccf7f43e9
+    [likelihood] => 0.88
+    [photos] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [type] => facebook
+                    [typeId] => facebook
+                    [typeName] => Facebook
+                    [url] => https://d2ojpxxtu63wzl.cloudfront.net/static/80f01dbd8b84b398456e567128362bcd_df22924ad14140e0c99985bf8cfaad5142ad5dda2c8b8bb3d2542135db60f6f6
+                    [isPrimary] => 1
+                )
+
+            [1] => stdClass Object
+                (
+                    [type] => other
+                    [typeId] => other
+                    [typeName] => Other
+                    [url] => https://d2ojpxxtu63wzl.cloudfront.net/static/1473773e3dea43aa7311e334b0f8793f_175955aba0802b050ae6dfb60f7461e988535cf916ddf7a334beeeddee141893
+                    [isPrimary] => 
+                )
+
+        )
+
+    [contactInfo] => stdClass Object
+        (
+            [familyName] => Iyatunguk
+            [fullName] => William Iyatunguk
+            [givenName] => William
+        )
+
+    [demographics] => stdClass Object
+        (
+            [gender] => Male
+        )
+
+    [socialProfiles] => Array
+        (
+            [0] => stdClass Object
+                (
+                    [followers] => 214
+                    [following] => 214
+                    [type] => facebook
+                    [typeId] => facebook
+                    [typeName] => Facebook
+                    [url] => https://www.facebook.com/wiyatunguk
+                    [username] => wiyatunguk
+                    [id] => 100000353200817
+                )
+
+            [1] => stdClass Object
+                (
+                    [type] => yahoo
+                    [typeId] => yahoo
+                    [typeName] => Yahoo
+                    [url] => http://profile.yahoo.com/SKXDZETW77NXUQA2DLDZFGYIP4
+                    [id] => SKXDZETW77NXUQA2DLDZFGYIP4
+                )
+
+        )
+
+)
+</pre><br/>----------------<br/>
