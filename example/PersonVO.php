@@ -44,10 +44,27 @@ class PersonVO {
     }
 
     public function getFullContactDumpJsonStatus() {
-        if($this->fullContactDumpJson){
+        
+
+
+        if( $this->fullContactDumpJson ){
+            if( $this->fullContactDumpJson == "NULL" ){
+                return null;
+            }
+
             return json_decode($this->fullContactDumpJson)->status;
         } else {
             return null;
         }
     }
+
+    /*public function getFullContactDumpJsonStatus() {
+        //print_r("\n" . $this->fullContactDumpJson . "\n");
+        if(   ){
+            echo "apparently null";
+            return null;
+        } else {
+            return json_decode($this->fullContactDumpJson)->status;
+        }
+    }*/
 }

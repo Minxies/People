@@ -19,7 +19,15 @@ class APIKeyCreator
 
         $this->counter++;
         $aPIKeyIndex = $this->counter % $this->aPIKeyFileLength;
-        echo "trying key: " . $file[$aPIKeyIndex];
+        echo "trying key: " . $file[$aPIKeyIndex] . "\n";
         return $file[$aPIKeyIndex];
+    }
+
+    public function getRandomKey(){
+        $file = file($this->filePath);
+
+        echo $file[array_rand($file)];
+
+        return $file[array_rand($file)];
     }
 }

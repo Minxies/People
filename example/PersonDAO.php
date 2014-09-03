@@ -6,11 +6,13 @@ class PersonDAO
 {
     protected $connect;
     protected $db;
+    protected $tableName;
     
     // Attempts to initialize the database connection using the supplied info.
-    public function PersonDAO($host, $username, $password, $database) {
+    public function PersonDAO($host, $username, $password, $database, $tableName) {
         $this->connect = mysql_connect($host, $username, $password);
         $this->db = mysql_select_db($database);
+        $this->tableName = mysql_real_escape_string($tableName);
     }
     
     // Executes the specified query and returns an associative array of reseults.
@@ -26,7 +28,7 @@ class PersonDAO
 
                 $personVO[$i]->setId($row['id']);
                 $personVO[$i]->setEmailAddress($row['emailaddress']);
-                $personVO[$i]->setFirstName($row['firstname']);
+                //$personVO[$i]->setFirstName($row['querystatusinprogressflag']);
                 $personVO[$i]->setFullContactDumpJson($row['fullcontactdumpjson']);
 
             }
@@ -36,13 +38,13 @@ class PersonDAO
     
     // Retrieves the corresponding row for the specified user ID.
     public function getByPersonId($userId) {
-        $sql = "SELECT * FROM persons WHERE id=".$userId;
+        $sql = "SELECT * FROM " . $this->tableName . " WHERE id=".$userId;
         return $this->execute($sql);
     }
     
-    // Retrieves all persons currently in the database.
+    // Retrieves all AR currently in the database.
     public function getPersons() {
-        $sql = "SELECT * FROM persons";
+        $sql = "SELECT * FROM " . $this->tableName;
         return $this->execute($sql);
     }
     
@@ -60,15 +62,16 @@ class PersonDAO
         // If the query returned a row then update,
         // otherwise insert a new user.
         if(sizeof($currPersonVO) > 0) {
-            $sql = "UPDATE persons SET ".
+            $sql = "UPDATE " . $this->tableName . " SET ".
                 "fullcontactdumpjson='". mysql_real_escape_string( $personVO->getFullContactDumpJson() )."' ".
+                //"querystatusinprogressflag='". mysql_real_escape_string( $personVO->getFullContactDumpStatus() )."' ".
                 "WHERE id=".$personVO->getId();
             
             mysql_query($sql, $this->connect) or die(mysql_error());
             $affectedRows = mysql_affected_rows();
         }
         else {
-            $sql = "INSERT INTO persons (fullcontactdumpjson) VALUES('".
+            $sql = "INSERT INTO " . $this->tableName . " (fullcontactdumpjson) VALUES('".
                 $personVO->getFullContactDumpJson()."', ".
             
             mysql_query($sql, $this->connect) or die(mysql_error());
@@ -89,7 +92,7 @@ class PersonDAO
         
         // Otherwise delete a user.
         if(sizeof($currPersonVO) > 0) {
-            $sql = "DELETE FROM persons WHERE id=".$personVO->getId();
+            $sql = "DELETE FROM " . $this->tableName . " WHERE id=".$personVO->getId();
             
             mysql_query($sql, $this->connect) or die(mysql_error());
             $affectedRows = mysql_affected_rows();
